@@ -62,4 +62,4 @@ function displayMealModalDetails(meal) {
   description.innerText= meal.strInstructions;
 }
 
-loadData("rice");
+loadData("");
