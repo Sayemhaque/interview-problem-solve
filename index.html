@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>YuM!</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css"
       rel="stylesheet"
@@ -14,9 +14,9 @@
   </head>
   <body class="px-2 md:px-10">
     <header>
-      <div class="navbar bg-base-100 shadow-lg ">
+      <div class="navbar bg-base-100 shadow-lg">
         <div class="flex-1">
-          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a class="btn btn-ghost normal-case text-xl lg:text-3xl">YuM!</a>
         </div>
         <div class="flex-none gap-2">
           <div class="form-control">
@@ -24,17 +24,35 @@
               type="text"
               placeholder="Search"
               id="input-field"
-              class="w-2/4 md:w-auto"
+              class="w-4/4 md:w-full px-2 py-1 border border-black"
             />
           </div>
-       
         </div>
-        <button class="btn" onclick="searchMeal()">Search</button>
-       
+        <button
+          class="px-1 py-1 bg-black text-white font-bold"
+          onclick="searchMeal()"
+        >
+          Search
+        </button>
       </div>
     </header>
-    <main class="container grid grid-cols-2 sm:gird-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5"></main>
+    <main
+      class="container grid grid-cols-2 sm:gird-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5">
+  </main>
 
+
+
+    <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+    <div class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <figure><img src="" id="meal-img"  /></figure>
+        <h3 class="font-bold text-3xl mt-5" id="meal-title"></h3>
+        <p class="py-4" id="meal-description"></p>
+        <div class="modal-action">
+          <label for="my-modal-6" class="btn">Close</label>
+        </div>
+      </div>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
