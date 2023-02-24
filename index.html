@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="px-2 md:px-10">
+    <header>
+      <div class="navbar bg-base-100 shadow-lg ">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
+        <div class="flex-none gap-2">
+          <div class="form-control">
+            <input
+              type="text"
+              placeholder="Search"
+              id="input-field"
+              class="w-2/4 md:w-auto"
+            />
+          </div>
+       
+        </div>
+        <button class="btn" onclick="searchMeal()">Search</button>
+       
+      </div>
+    </header>
+    <main class="container grid grid-cols-2 sm:gird-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5"></main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
