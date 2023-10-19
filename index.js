@@ -12,11 +12,14 @@ app.get("/employeeData", async (req, res) => {
     res.send(employee_data)
 })
 
+
 app.get("/employee/:id", async (req, res) => {
     const Id = req.params.id;
     const employee = employee_data.employees.find(employee => employee.id == Id)
     res.send(employee)
 })
+
+
 app.get("/employee", async (req, res) => {
     try {
         const employeeId = req.query.employeeId
