@@ -18,11 +18,6 @@ const getBiggestWord = (para) => {
 // getBiggestWord(para)
 
 
-
-
-
-
-
 // Problem-------1
 
 // Write a JavaScript function that takes a positive integer as input and prints a pattern of asterisks (*) in the shape of a right-angled triangle. The number of rows in the triangle should be equal to the input integer. For example, if the input is 5, the output should look like this:
@@ -31,7 +26,6 @@ const getBiggestWord = (para) => {
 ***
 ****
 *****/
-
 const createPattern = (input) => {
     for (let i = 1; i <= input; i++) {
         console.log('*'.repeat(i));
@@ -40,8 +34,9 @@ const createPattern = (input) => {
 
 // createPattern(5)
 
-//write a javascript program to check two numbers and return true if one of the number is 100 or if the sum of the two numbers is 100
+// Problem-------2
 
+//write a javascript program to check two numbers and return true if one of the number is 100 or if the sum of the two numbers is 100
 function checkNumber(num1, num2) {
     if (num1 === 100 || num2 === 100 || num1 + num2 === 100) {
         return true
@@ -51,8 +46,19 @@ function checkNumber(num1, num2) {
     }
 }
 
-
 // one liner of this 
-const checkNumber = (a,b) => a === 100 || b === 100 || (a + b) === 100
+const checkNumber = (a, b) => a === 100 || b === 100 || (a + b) === 100
 
 console.log(checkNumber(100, 0))
+
+// Problem-------3
+
+//write a javascript program to get the extension of a filename
+const extionOfFile = (fileName) => {
+    const extensionIndex = fileName.indexOf(".")
+    const extensionName = fileName.slice(extensionIndex)
+    console.log(extensionName)
+}
+
+extionOfFile("index.html")
+extionOfFile("index.js")
