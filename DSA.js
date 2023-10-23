@@ -51,4 +51,8 @@ function checkNumber(num1, num2) {
     }
 }
 
-console.log(checkNumber(1, 80))
+
+// one liner of this 
+const checkNumber = (a,b) => a === 100 || b === 100 || (a + b) === 100
+
+console.log(checkNumber(100, 0))
