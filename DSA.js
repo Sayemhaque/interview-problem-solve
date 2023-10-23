@@ -15,4 +15,40 @@ const getBiggestWord = (para) => {
     console.log(biggestWord)
 }
 
-getBiggestWord(para)
+// getBiggestWord(para)
+
+
+
+
+
+
+
+// Problem-------1
+
+// Write a JavaScript function that takes a positive integer as input and prints a pattern of asterisks (*) in the shape of a right-angled triangle. The number of rows in the triangle should be equal to the input integer. For example, if the input is 5, the output should look like this:
+/*
+**
+***
+****
+*****/
+
+const createPattern = (input) => {
+    for (let i = 1; i <= input; i++) {
+        console.log('*'.repeat(i));
+    }
+}
+
+// createPattern(5)
+
+//write a javascript program to check two numbers and return true if one of the number is 100 or if the sum of the two numbers is 100
+
+function checkNumber(num1, num2) {
+    if (num1 === 100 || num2 === 100 || num1 + num2 === 100) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+
+console.log(checkNumber(1, 80))
